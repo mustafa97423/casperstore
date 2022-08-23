@@ -1,0 +1,86 @@
+<%- include('./partials/header.ejs') %>
+
+
+      <div class="head-con">
+            <div class="con-head">
+                  <h2>Register a new account</h2>
+                  <p>Get free rewards, steam gifts and your payment history</p>
+            </div>
+      </div>
+
+
+            <div class="container">
+
+                  <div class="form-con">
+
+                        
+
+                        <form method="POST" class="form-register">
+                              <div class="input-field-con">
+                                    
+                                    <input type="text" name="userName" id="userName" class="input-field" placeholder="Name" required>
+                              </div>
+
+                              <% let userNameError = validationErrors.find(err => err.param === 'userName') %>
+                              <% if(userNameError) { %>
+                              <p class="error-alert">
+                                    <%= userNameError.msg %>
+                              </p>
+                                    <% } %>
+
+                              <div class="input-field-con">
+                                    <br>
+                                    <input type="text" name="socialUsername" id="socialUsername" class="input-field" placeholder="Instagram or Facebook" required>
+                              </div>
+
+                              <% let socialUsernameError = validationErrors.find(err => err.param === 'userName') %>
+                              <% if(socialUsernameError) { %>
+                              <p class="error-alert">
+                                    <%= socialUsernameError.msg %>
+                              </p>
+                                    <% } %>
+
+                              <div class="input-field-con">
+                                    <br>
+                                    <input type="text" name="email" id="email" class="input-field"  placeholder="Email" required>
+                              </div>
+
+                              <% let emailError = validationErrors.find(err => err.param === 'email') %>
+                              <% if(emailError) { %>
+                              <p class="error-alert">
+                                    <%= emailError.msg %>
+                              </p>
+                                    <% } %>
+
+                              <div class="input-field-con">
+                                    <br>
+                                    <input type="text" name="password" id="password" class="input-field"  placeholder="Password" required>
+                              </div>
+
+                              <% let passwordError = validationErrors.find(err => err.param === 'password') %>
+                              <% if(passwordError) { %>
+                              <p class="error-alert">
+                                    <%= passwordError.msg %>
+                              </p>
+                                    <% } %>
+
+                                    
+                                    <br>
+                                    <p class="suggest">Already have an account? <a href="/login">Login</a></p>
+                              <input type="submit" value="SIGN UP" class="register-btn" >
+                        
+
+                              </form>
+
+                              <% if(authError) {%>
+                                    <div class="alert"><%= authError %>
+                       </div>
+                       <% }%>
+                        
+
+                  </div>
+            </div>      
+          
+
+
+            <%- include('./partials/footer.ejs') %>

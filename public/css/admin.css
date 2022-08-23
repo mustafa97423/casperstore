@@ -1,0 +1,101 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+}
+
+body {
+      background-image: url('/images/MM_BG0.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      height: 100vh;
+}
+
+.head-con {
+      width: 100vw;
+      font-size: medium;
+      color: #fff;
+      height: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      height: auto;
+      box-shadow: 0 0 40px 1px rgba(0, 104, 255, 1) inset;
+}
+
+.head-con h2 {
+      text-shadow: 0 0 6px 4px black ;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+}
+
+.manage-btn {
+      color: rgba(255, 255, 255, 0.847);
+      text-decoration: none;
+      height: 2.4rem;
+      padding: 0 15px 10px 15px;
+      margin-top: 0.3rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(18, 220, 0, 0.4);
+      border: solid 2px rgb(26, 209, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+}
+
+.manage-btn:hover {
+      background-color: rgba(81, 220, 0, 0.5);
+}
+
+.form-send {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      color: rgb(206, 206, 206);
+}
+
+.send-btn {
+      width: 8rem;
+      height: 3rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(18, 220, 0, 0.4);
+      border: solid 2px rgb(26, 209, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+}
+
+.form-send .input-field:focus {
+      outline:solid 2px rgba(81, 220, 0, 0.5);
+      box-shadow: 0 2px 5px 1px rgba(81, 220, 0, 0.5);
+}
+
+.form-send .input-field {
+      font-size: 25px;
+      line-height: 21px;
+      text-decoration: none solid rgb(255, 255, 255);
+      text-align: center;
+      word-spacing: 0px;
+      height: 54.973px;
+      width: 20rem;
+      border: 1px solid #31303E;
+      margin: 0px 0 0 0;
+      padding: 16px 16px 16px 16px;
+      min-height: auto;
+      border-radius: 6px;
+      min-width: auto;
+}

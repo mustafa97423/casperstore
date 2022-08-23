@@ -1,0 +1,30 @@
+<%- include('./partials/header.ejs') %>
+  <%- include('./partials/nav.ejs') %>
+    <br>
+    <div class="container">
+
+      <div class="promo-con">
+        <div class="head-con">
+          <h1>PROMOCODE!</h1>
+
+          <div class="desc-info">
+            <p>USE THE CODE TO GET THE BONUS!</p>
+
+            <p>You can receive accounts, bonus or keys.</p>
+          </div>
+        </div>
+
+        <form method="POST" action="/search-product" class="form-promo">
+          <input type="text" name="productIdField" id="productId" placeholder="USE PROMO CODE">
+          <input type="submit" class="collect-btn" value="COLLECT">
+
+          <p class="alert">Check your profile after collecting the code</p>
+        </form>
+
+      </div>
+
+
+
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

@@ -1,0 +1,47 @@
+<%- include('./partials/header.ejs') %>
+
+
+
+            <div class="container">
+
+
+                  <div class="form-con">
+
+                        <div class="head-con">
+                              <div class="con-head">
+                                    <h2>Login back!</h2>
+                              </div>
+                        </div>
+
+                        <br>
+                        
+                        <form method="POST" class="form-login">
+
+                              <div class="input-field-con">
+                                    <input type="text" name="email" id="email" class="input-field" placeholder="Email">
+                              </div>
+                              <div class="input-field-con">
+                                    <input type="text" name="password" id="password" class="input-field" placeholder="Password">
+                              </div>
+                              
+                              <p class="suggest">have'nt an account? <a href="/register">SIGN UP</a></p>
+                              <p class="suggest">forget password? <a href="/reset-password">Reset it</a></p>
+                              <input type="submit" value="Login" class="login-btn">
+
+                        </form>
+
+
+                        <br>
+
+                        <% if(authError) {%>
+                               <div class="alert"><%= authError %>
+                  </div>
+                  <% }%>
+
+
+            </div>
+
+            </div>
+
+
+            <%- include('./partials/footer.ejs') %>

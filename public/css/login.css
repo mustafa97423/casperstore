@@ -1,0 +1,138 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+}
+
+body {
+      background-image: url('/images/MM_BG0.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+}
+
+.container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      color: rgba(255, 255, 255, 0.889);
+      background-color: transparent;
+}
+
+.form-con {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 85vw;
+      padding: 2rem;
+      border-radius: 10px;
+}
+
+.form-login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+} 
+
+.error-alert {
+      width: 70%;
+      padding: 0.3rem;
+      background-color: tomato;
+      border-radius: 6px;
+      margin: 10px 0px;
+}
+
+.alert {
+      width: 70%;
+      padding: 0.3rem;
+      background-color: tomato;
+      border-radius: 6px;
+      margin: 10px 0px;
+}
+
+.head-con {
+      width: 100vw;
+      font-size: medium;
+      color: #fff;
+      height: 3rem;
+      line-height: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      box-shadow: 0 0 40px 1px rgba(0, 104, 255, 1) inset;
+}
+
+.head-con h2 {
+      text-shadow: 0 0 6px 4px black ;
+}
+
+
+.form-login .input-field {
+      font-size: 25px;
+      line-height: 0px;
+      text-decoration: none solid rgb(255, 255, 255);
+      text-align: center;
+      word-spacing: 0px;
+      height: 54.973px;
+      width: 35rem;
+      border: 1px solid #31303E;
+      margin: 10px 0 1rem 0;
+      padding: 0;
+      min-height: auto;
+      background-color: rgb(255, 255, 255, 0.9);
+      border-radius: 6px;
+      min-width: auto;
+}
+
+.form-login .input-field:focus {
+      outline:solid 2px rgba(81, 220, 0, 0.5);
+      box-shadow: 0 2px 5px 1px rgba(81, 220, 0, 0.5);
+}
+
+
+.login-btn {
+      width: 8rem;
+      height: 3rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(18, 220, 0, 0.4);
+      border: solid 2px rgb(26, 209, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+}
+
+.suggest {
+      color: rgba(255, 255, 255, 0.896);
+}
+
+.suggest a {
+      color: rgba(0, 123, 255, 0.896);
+}
+
+@media screen and (max-width: 1204px) {
+      .form-login .input-field {
+            width: 35rem;
+      }
+}
+@media screen and (max-width: 480px) {
+      .form-login .input-field {
+            width: 20rem;
+      }
+}
+@media screen and (max-width: 840px) {
+      .form-login .input-field {
+            width: 35rem;
+      }
+}
+@media screen and (max-width: 1204px) {
+      .form-login .input-field {
+            width: 20rem;
+      }
+}

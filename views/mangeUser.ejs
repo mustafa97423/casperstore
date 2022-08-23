@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+      <%- include('./partials/nav.ejs') %>
+<br><br>
+<div class="container">
+            <div class="promo-con">
+            <div class="head-con">
+                  <h1>MANAGE<span class="u">USERS!</span></h1>
+        
+                  <div class="desc-info">
+                    <p>Raise users up and down as admins and delete users</p>
+        
+                  </div>
+                </div>
+
+            
+
+                  <form method="POST" class="send-form">
+                        <div class="input-field">
+                              <input type="email" class="email-field" name="email" required >
+                        </div>
+                        <input type="submit" class="find-btn" value="Find">
+                  </form>
+
+            </div>
+      </div>
+            <%- include('./partials/footer.ejs') %>

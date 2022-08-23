@@ -1,0 +1,57 @@
+<%- include('./partials/header.ejs') %>
+      <%- include('./partials/nav.ejs') %>
+
+            <br><br>
+
+            <div class="container">
+                  <% if(user) {%>
+
+                        <div class="head-con">
+                              <div class="con-head">
+                                    <a href="/admin/mange-user" class="back-btn">BACK</a>
+                                    <h1>MANAGE<span>USER</span></h1>
+                              </div>
+                        </div>
+
+                        <div class="user-detaiels">
+                              <h1>
+                                    <%= user.userName %>
+                              </h1>
+                              <hr>
+
+                              <h2>Email: <%= user.email %>
+                                          </h1>
+                                          <h2>Social user: <%= user.socialUsername %>
+                                          </h2>
+                                          <h2>Is admin: <span class="boolean">
+                                                      <%= user.isAdmin %>
+                                                </span></h2>
+                                          <h2>Is verified: <span class="boolean">
+                                                      <%= user.verified %>
+                                                </span></h2>
+
+
+                                          <form method="POST" class="action-btns">
+                                                      <input type="submit" class="toAdmin-btn" value="Make him Admin"
+                                                            formaction="/admin/mangeUser/toAdmin/<%=user.email %>">
+                                                      <input type="submit" class="toUser-btn"
+                                                            value="Make him Normal user"
+                                                            formaction="/admin/mangeUser/toUser/<%=user.email %>">
+                                                            <input type="submit" class="deleteUser-btn"
+                                                                  value="Delete him"
+                                                                  formaction="/admin/mangeUser/delete/<%=user.email %>">
+                                          </form>
+
+                        </div>
+
+
+
+
+                        <% } else {%>
+
+                              <p>no user to view</p>
+
+                              <% }%>
+            </div>
+
+            <%- include('./partials/footer.ejs') %>

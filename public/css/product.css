@@ -1,0 +1,32 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+}
+
+body {
+      background-image: url('/images/MM_BG0.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      height: 100vh;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      color: rgba(255, 255, 255, 0.878);
+      justify-content: center;
+      align-items: center;
+}
+
+.productIdH3 {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 0.4rem;
+}
+
+a {
+      color: rgba(255, 255, 255, 0.827);
+}

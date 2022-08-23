@@ -1,0 +1,51 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/nav.ejs') %>
+
+
+<div class="head-con">
+      <h2>Send accounts, gifts or codes</h2>
+      <a href="/admin/mange-user" class="manage-btn">Manage Users</a>
+</div>
+
+<div class="container">
+      <form method="POST" action="/admin/add-product/product" class="form-send">
+      
+      
+      <br>
+
+      
+      <div class="input-field-con">
+            
+            <br>
+            <input type="text" name="productEmail" id="productEmail" class="input-field" placeholder="Product email">
+      </div>
+      <div class="input-field-con">
+            
+            <br>
+            <input type="text" name="productPassword" id="productPassword" class="input-field" placeholder="Product password">
+      </div>
+      <div class="input-field-con">
+            
+            <br>
+            <input type="text" name="platformCode" id="platformCode" class="input-field" placeholder="platform code">
+      </div>
+      <div class="input-field-con">
+            
+            <br>
+            <input type="text" name="warrantyPeriod" id="warrantyPeriod" class="input-field" placeholder="warranty period">
+      </div>
+      <input type="submit" value="Send" class="send-btn">
+</form>
+
+
+
+
+</div>
+
+
+<br><br>
+
+
+  
+
+<%- include('./partials/footer.ejs') %>

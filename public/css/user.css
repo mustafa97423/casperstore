@@ -1,0 +1,144 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+}
+
+body {
+      background-image: url('/images/MM_BG0.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
+}
+
+
+.container {
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: rgba(255, 255, 255, 0.885);
+}
+
+.head-con {
+      width: 100vw;
+      font-size: medium;
+      color: #fff;
+      height: 5rem;
+      line-height: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0.8rem;
+      box-shadow: 0 0 40px 1px rgba(0, 104, 255, 1) inset;
+}
+
+.con-head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.back-btn {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(0, 110, 220, 0.4);
+      border: solid 2px rgb(2, 83, 110);
+      border-radius: 0.3rem;
+      color: #fff;
+      margin-bottom: 0.7rem;
+      margin-right: 25%;
+      padding: 2px;
+}
+
+.back-btn:hover {
+      background-color: rgba(81, 110, 110, 0.5);
+}
+
+.head-con h1 {
+      text-shadow: 0 0 6px 4px black ;
+      margin: 0 0 15px 0;
+}
+
+span {
+      color: #1f1f2b;
+      text-shadow: 0 0 10px ;
+}
+
+.user-detaiels {
+      line-height: 2.5rem;
+      margin-top: 3rem;
+}
+
+.boolean {
+      color: #004cff;
+      text-shadow: 0 0 10px ;
+}
+
+.action-btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+}
+
+.toAdmin-btn {
+      width: 100%;
+      height: 2.4rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(220, 100, 0, 0.4);
+      border: solid 2px rgb(209, 100, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+}
+
+.toAdmin-btn:hover {
+      background-color: rgba(220, 100, 0, 0.5);
+}
+
+.toUser-btn {
+      width: 100%;
+      height: 2.4rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(18, 220, 0, 0.4);
+      border: solid 2px rgb(26, 209, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+}
+
+.toUser-btn:hover {
+      background-color: rgba(81, 220, 0, 0.5);
+}
+
+.deleteUser-btn {
+      width: 100%;
+      height: 2.4rem;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgba(220, 0, 0, 0.4);
+      border: solid 2px rgb(209, 2, 2);
+      border-radius: 0.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+}
+
+.deleteUser-btn:hover {
+      background-color: rgba(220, 0, 0, 0.5);
+}

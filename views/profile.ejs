@@ -1,0 +1,41 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/nav.ejs') %>
+
+<br>
+
+<div class="head-con">
+<h2>
+     Total Purshases: <%= items.length%>
+</h2>
+</div>
+
+<br>
+<div class="container">
+<% if (items.length === 0) { %>
+<p class="err">there are no products to view</p>
+<% } else {%>
+
+      <% items.forEach(item => { %>
+
+
+            <div class="card">
+                  <div class="card-head">
+                        <h4><%= item.productId %></h4>
+                  </div>
+
+                  <div class="card-footer">
+                        <h3 class="first-item">Email: <%= item.productEmail %> </h3>
+                        <h3>Password: <%= item.productPassword %> </h3>
+                        <h3>code: <%= item.platformCode %> </h3>
+                        <h4>Warranty: <%= item.warrantyPeriod %> </h3>
+                        <h4 class="last-item">Date: <%= item.timeStamp %> </h3>
+                  </div>
+            </div>
+            
+            <% })  %>
+
+<% } %>
+</div>
+<br><br>
+
+<%- include('./partials/footer.ejs') %>
